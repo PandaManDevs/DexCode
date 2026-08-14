@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DexCode — Web Development</title>
+<meta name="description" content="DexCode web development and server solutions.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#070812;color:#fff;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(140px);z-index:-1;opacity:.18}
+body:before{width:500px;height:500px;background:#7c3aed;top:-180px;left:-180px}
+body:after{width:450px;height:450px;background:#06b6d4;right:-180px;bottom:-180px}
+nav{position:fixed;top:0;width:100%;z-index:10;background:#070812cc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.nav{max-width:1150px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:25px;font-weight:900}.logo span,.gradient{color:#a78bfa}
+.links{display:flex;gap:25px;align-items:center}.links a{color:#bbb;text-decoration:none;font-size:14px}.links a:hover{color:#fff}
+.btn{display:inline-block;border:0;border-radius:12px;padding:14px 20px;font-weight:800;color:#fff;text-decoration:none;cursor:pointer;background:linear-gradient(135deg,#7c3aed,#06b6d4);transition:.2s}
+.btn:hover{transform:translateY(-2px)}.ghost{background:#ffffff08;border:1px solid #ffffff14}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 20px 70px}.hero>div{max-width:850px}
+.badge{display:inline-block;padding:8px 14px;border-radius:30px;background:#8b5cf615;border:1px solid #8b5cf655;color:#c4b5fd;margin-bottom:25px}
+h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-5px;margin-bottom:25px}
+.hero p{color:#a8aaba;line-height:1.7;font-size:18px}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+section{padding:90px 20px}.container{max-width:1150px;margin:auto}
+.title{text-align:center;margin-bottom:45px}.title h2{font-size:42px;letter-spacing:-2px}.title p{color:#9498a8;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid #ffffff10;background:#ffffff08;border-radius:20px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#8b5cf655}
+.icon{font-size:27px;margin-bottom:18px}.card p{color:#979aaa;line-height:1.6;margin-top:10px;font-size:14px}
+.plan{position:relative}.popular{position:absolute;right:18px;top:18px;background:#7c3aed;padding:6px 9px;border-radius:8px;font-size:11px;font-weight:bold}
+.plan small{color:#888}.plan h3{font-size:25px;margin-top:12px}.price{font-size:40px;font-weight:900;margin:20px 0}.price span{font-size:13px;color:#888;font-weight:normal}
+ul{list-style:none;margin:20px 0}.plan li{padding:8px 0;color:#c8cad4;font-size:14px}.plan li:before{content:"✓";color:#22d3ee;font-weight:bold;margin-right:9px}.buy{width:100%}
+.order{max-width:800px;margin:auto}.orderbox{padding:30px;border:1px solid #ffffff12;background:#ffffff08;border-radius:20px}
+label{display:block;color:#c8cad4;font-size:13px;margin:13px 0 7px}input,select,textarea{width:100%;padding:14px;border-radius:10px;border:1px solid #ffffff12;background:#0005;color:#fff;outline:0}textarea{min-height:110px;resize:vertical}select option{background:#10111b}
+.note{color:#818596;font-size:12px;line-height:1.5;margin-top:15px}
+footer{text-align:center;border-top:1px solid #ffffff10;padding:30px;color:#777;font-size:13px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.links{display:none}.hero h1{letter-spacing:-3px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><a class="logo" href="#">Dex<span>Code</span></a><div class="links"><a href="#services">Services</a><a href="#plans">Plans</a><a href="#order">Order</a></div><a class="btn" href="#plans">View Plans</a></div></nav>
+
+<header class="hero">
+<div>
+<div class="badge">⚡ Web Development & Server Solutions</div>
+<h1>Build something<br><span class="gradient">awesome.</span></h1>
+<p>Modern websites, custom development and server solutions for businesses, creators, communities and gamers.</p>
+<div class="actions"><a class="btn" href="#plans">🚀 View Plans</a><a class="btn ghost" href="#order">💻 Start a Project</a></div>
+</div>
+</header>
+
+<section id="services"><div class="container">
+<div class="title"><h2>What I Build</h2><p>Development services built around your project.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🌐</div><h3>Websites</h3><p>Responsive websites with modern layouts, animations and mobile support.</p></div>
+<div class="card"><div class="icon">🖥️</div><h3>Servers</h3><p>Server setup and configuration for websites, applications, communities and game projects.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Custom Development</h3><p>Dashboards, integrations, APIs, automation and custom functionality.</p></div>
+</div></div></section>
+
+<section id="plans"><div class="container">
+<div class="title"><h2>Development Plans</h2><p>Secure checkout powered by Stripe.</p></div>
+<div class="grid">
+<div class="card plan"><small>STARTER</small><h3>Starter</h3><div class="price">$25 <span>/ project</span></div><ul><li>1-page website</li><li>Responsive design</li><li>Modern UI</li><li>Basic animations</li><li>Deployment help</li></ul><button class="btn buy" data-plan="starter">Pay with Stripe</button></div>
+<div class="card plan"><div class="popular">POPULAR</div><small>PRO</small><h3>Pro</h3><div class="price">$75 <span>/ project</span></div><ul><li>Multi-page website</li><li>Premium UI design</li><li>Animations</li><li>Contact forms</li><li>Deployment help</li><li>Basic SEO</li></ul><button class="btn buy" data-plan="pro">Pay with Stripe</button></div>
+<div class="card plan"><small>CUSTOM</small><h3>Custom</h3><div class="price">$150+ <span>/ project</span></div><ul><li>Custom website</li><li>Dashboard</li><li>Database integration</li><li>API integrations</li><li>Advanced functionality</li><li>Custom server setup</li></ul><button class="btn buy" data-plan="custom">Request / Pay</button></div>
+</div></div></section>
+
+<section id="order"><div class="container order">
+<div class="title"><h2>Start Your Project</h2><p>Enter your information before checkout.</p></div>
+<div class="orderbox">
+<label>Name</label><input id="name" placeholder="Your name">
+<label>Email</label><input id="email" type="email" placeholder="you@example.com">
+<label>Project details</label><textarea id="details" placeholder="Tell me what you want built..."></textarea>
+<p class="note">For custom projects, submit your details and you'll be contacted about the final price.</p>
+</div></div></section>
+
+<footer>© <span id="year"></span> DexCode — Web Development & Server Solutions</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.querySelectorAll(".buy").forEach(button=>{
+ button.addEventListener("click",async()=>{
+  const plan=button.dataset.plan;
+  const name=document.getElementById("name").value.trim();
+  const email=document.getElementById("email").value.trim();
+  const details=document.getElementById("details").value.trim();
+  if(!name||!email){document.getElementById("order").scrollIntoView({behavior:"smooth"});alert("Please enter your name and email first.");return;}
+  button.disabled=true;button.textContent="Opening Stripe...";
+  try{
+   const res=await fetch("/api/create-checkout-session",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({plan,name,email,details})});
+   const data=await res.json();
+   if(!res.ok)throw new Error(data.error||"Checkout failed.");
+   window.location.href=data.url;
+  }catch(e){alert(e.message);button.disabled=false;button.textContent="Pay with Stripe";}
+ });
+});
+</script>
+</body>
+</html>

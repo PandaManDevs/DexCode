@@ -1,0 +1,7 @@
+{
+  "name": "dexcode-stripe-store",
+  "private": true,
+  "dependencies": {
+    "stripe": "^18.4.0"
+  }
+}
